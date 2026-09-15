@@ -1,233 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SPDigitalJourney | Google Maps & Local SEO Expert Bengaluru</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-    body { font-family: 'Inter', sans-serif; }
-    .bg-grid { background-size: 30px 30px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPDigitalJourney | Google Ecosystem Specialist & Local SEO Visibility</title>
+    <meta name="description" content="Google Maps, Street View, 360 Virtual Tours & Local Digital Visibility Specialist. 15+ years experience, 2,000+ businesses across 100+ cities.">
+    <meta name="keywords" content="Google Maps Specialist, Street View Photography, Local SEO, Google Business Profile, 360 Virtual Tour, Sanjay Paul">
+    
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:title" content="SPDigitalJourney - Your Business. Found First.">
+    <meta property="og:description" content="End-to-end Google Ecosystem & Local SEO Visibility Solutions by Sanjay Paul.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spdigitaljourney.github.io/">
+
+    <!-- Schema.org JSON-LD Structured Data for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "SPDigitalJourney",
+      "image": "https://spdigitaljourney.github.io/logo.png",
+      "@id": "https://spdigitaljourney.github.io/",
+      "url": "https://spdigitaljourney.github.io/",
+      "telephone": "+917799345794",
+      "email": "rpsanjaypaul@gmail.com",
+      "priceRange": "$$",
+      "description": "Google Maps, Street View 360 Photography, Local Digital Visibility & GBP Optimisation.",
+      "founder": {
+        "@type": "Person",
+        "name": "Sanjay Paul",
+        "jobTitle": "Independent Digital Marketer & Google Ecosystem Specialist"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sanjaypaul7024",
+        "https://x.com/SanjayPaul_7024",
+        "https://g.page/r/CdRrLmhaPARzEBM/review"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-blue: #0b5ed7;
+            --accent-blue: #1d4ed8;
+            --dark-navy: #0f172a;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --whatsapp-green: #25d366;
+            --border-radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--dark-navy);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-text span {
+            color: var(--primary-blue);
+        }
+
+        .nav-btn {
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .nav-btn:hover {
+            background: var(--accent-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 5% 3rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            background: #e0e7ff;
+            color: #3730a3;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--dark-navy);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        /* Stats Grid */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+        }
+
+        .stat-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* AI & Maps Visibility Checker Tool */
+        .interactive-tool {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            max-width: 650px;
+            margin: 2rem auto;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+        }
+
+        .interactive-tool h2 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-navy);
+        }
+
+        .tool-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+
+        .tool-input-group input, .tool-input-group select {
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            width: 100%;
+        }
+
+        .tool-btn {
+            background: var(--dark-navy);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .tool-btn:hover {
+            background: #1e293b;
+        }
+
+        .tool-result {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: #f1f5f9;
+            display: none;
+        }
+
+        /* Services Grid */
+        .section-title {
+            text-align: center;
+            margin: 3rem 0 1.5rem;
+            font-size: 1.8rem;
+            color: var(--dark-navy);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 0 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            border: 1px solid #e2e8f0;
+        }
+
+        .service-card i {
+            font-size: 1.8rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Lead Capture & WhatsApp Funnel Section */
+        .contact-section {
+            background: white;
+            margin: 4rem 5% 2rem;
+            padding: 2.5rem 1.5rem;
+            border-radius: var(--border-radius);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .whatsapp-submit {
+            background: var(--whatsapp-green);
+            color: white;
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background 0.3s;
+        }
+
+        .whatsapp-submit:hover {
+            background: #1eb954;
+        }
+
+        /* Social Verification Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 5%;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid #e2e8f0;
+            margin-top: 3rem;
+            background: #ffffff;
+        }
+
+        footer a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .interactive-tool, .contact-section {
+                padding: 1.5rem 1rem;
+            }
+        }
+    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+<body>
 
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <div class="w-11 h-11 rounded-full bg-blue-600 flex items-center justify-center font-black text-xl text-white shadow-lg shadow-blue-500/30 border border-blue-400/30">
-          SP
+    <!-- Top Navigation -->
+    <nav>
+        <div class="logo-text">
+            <i class="fa-solid fa-location-dot" style="color: var(--primary-blue);"></i>
+            SP<span>DIGITALJOURNEY</span>
         </div>
-        <div>
-          <span class="text-lg font-bold text-white tracking-tight block">SP Digital Journey</span>
-          <span class="text-[10px] uppercase tracking-wider text-slate-400 font-medium">MSME Udyam Registered</span>
-        </div>
-      </div>
-      
-      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-        <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
-        <a href="#services" class="hover:text-blue-400 transition-colors">Services</a>
-        <a href="#pricing" class="hover:text-blue-400 transition-colors">Pricing</a>
-        <a href="#contact" class="hover:text-blue-400 transition-colors">Support</a>
-      </nav>
+        <a href="#audit-tool" class="nav-btn">Free Audit</a>
+    </nav>
 
-      <a href="https://wa.me/917799423794" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-4 py-2 rounded-full text-sm transition-all shadow-md shadow-emerald-900/20">
-        <i class="fa-brands fa-whatsapp text-lg"></i>
-        <span>24x7 Support</span>
-      </a>
-    </div>
-  </header>
+    <!-- Main Hero Section -->
+    <section class="hero">
+        <span class="badge"><i class="fa-solid fa-certificate"></i> Ex-Google Maps (Since 2007) • MSME Registered</span>
+        <h1>From Building Map Data To Building Business Visibility</h1>
+        <p>15+ years of Google Ecosystem expertise helping local businesses rank higher, build trust, and drive footfall through 360° Street View photography & Local SEO.</p>
 
-  <section class="relative py-20 lg:py-28 bg-grid overflow-hidden border-b border-slate-800">
-    <div class="absolute inset-0 bg-gradient-to-b from-blue-600/10 via-transparent to-slate-950 pointer-events-none"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-widest mb-6">
-            <i class="fa-solid fa-shield-halved"></i> Ex-Google Maps Insider Engineering Expertise
-          </div>
-          <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Master Local SEO & Dominate <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Google Maps</span>
-          </h1>
-          <p class="mt-6 text-lg text-slate-400 leading-relaxed">
-            Driven by direct field-level experience in ranking signals, review algorithms, and policy violations. We help businesses in Bengaluru and across India recover listings, gain visibility, and scale footfall.
-          </p>
-          <div class="mt-8 flex flex-col sm:flex-row items-center gap-4">
-            <a href="#pricing" class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl shadow-lg shadow-blue-600/30 transition-all text-center">
-              View Packages
-            </a>
-            <a href="https://wa.me/917799423794" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold rounded-xl transition-all text-center flex items-center justify-center gap-2">
-              <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i> Instant Ticket Support
-            </a>
-          </div>
-        </div>
-        
-        <div class="relative flex justify-center">
-          <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-500 to-emerald-500 opacity-30 blur-lg"></div>
-          <img 
-            src="sanjay-paul.png" 
-            alt="Sanjay Paul - Founder of SPDigitalJourney" 
-            class="relative rounded-2xl border border-slate-800 shadow-2xl max-w-full h-auto object-cover max-h-[500px]"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-10 bg-slate-900/50 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="text-3xl lg:text-4xl font-extrabold text-blue-400">2,000+</div>
-          <div class="text-xs uppercase tracking-wider text-slate-400 mt-1 font-medium">Properties Scanned</div>
-        </div>
-        <div>
-          <div class="text-3xl lg:text-4xl font-extrabold text-emerald-400">7+</div>
-          <div class="text-xs uppercase tracking-wider text-slate-400 mt-1 font-medium">States Covered</div>
-        </div>
-        <div>
-          <div class="text-3xl lg:text-4xl font-extrabold text-blue-400">100+</div>
-          <div class="text-xs uppercase tracking-wider text-slate-400 mt-1 font-medium">Cities Served</div>
-        </div>
-        <div>
-          <div class="text-3xl lg:text-4xl font-extrabold text-emerald-400">2007</div>
-          <div class="text-xs uppercase tracking-wider text-slate-400 mt-1 font-medium">Maps Insider Since</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="py-20 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1">
-          <div class="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-2">Our Founder's Expertise</div>
-          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Built by an Insider. Powered by Field Realities.</h2>
-          <p class="text-slate-300 leading-relaxed mb-4">
-            Founded by <strong class="text-white">Sanjay Paul</strong>, an original member of the <strong>Google Maps India Hyderabad Division (2007 Pilot Batch)</strong> during the foundational launch of India's mapping infrastructure.
-          </p>
-          <p class="text-slate-400 leading-relaxed mb-6">
-            We bypass standard digital marketing theories. Instead, we use ground-level mechanics of Google's ranking ecosystem to resolve listing suspensions, optimize spatial metadata, and ensure business profiles maintain long-term search dominance.
-          </p>
-          <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
-            <i class="fa-solid fa-award text-3xl text-amber-400"></i>
-            <div>
-              <div class="text-white font-semibold text-sm">MSME Udyam Registered Entity</div>
-              <div class="text-xs text-slate-400">Achitnagar, Bengaluru, Karnataka, India</div>
+        <!-- Stats Container -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>15+</h3>
+                <p>Years Experience</p>
             </div>
-          </div>
-        </div>
-
-        <div class="order-1 md:order-2 bg-slate-900 p-6 rounded-2xl border border-slate-800 text-center">
-          <img 
-            src="sanjay-paul.png" 
-            alt="Sanjay Paul" 
-            class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-blue-600/30 shadow-xl mb-4"
-          />
-          <h3 class="text-xl font-bold text-white">Sanjay Paul</h3>
-          <p class="text-blue-400 text-sm font-medium mb-3">Founder, SPDigitalJourney</p>
-          <p class="text-slate-400 text-xs leading-relaxed max-w-md mx-auto">
-            Google Maps India Team (2007 Pilot Batch) providing hands-on local SEO, 360° virtual tours, and Google Business Profile restoration.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="pricing" class="py-20 border-b border-slate-800 bg-slate-900/30">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold text-white">Services & Standard Pricing</h2>
-        <p class="text-slate-400 mt-3 text-sm">Transparent, ROI-focused local optimization solutions tailored for growing enterprises.</p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        
-        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
-          <div>
-            <div class="text-blue-400 text-sm font-semibold mb-2">Audit</div>
-            <h3 class="text-lg font-bold text-white mb-4">Google Visibility Audit</h3>
-            <p class="text-slate-400 text-xs leading-relaxed mb-6">Complete diagnostics of ranking signals, citation consistency, policy compliance, and local competitor analysis.</p>
-            <div class="text-2xl font-extrabold text-white mb-6">₹10,000 <span class="text-xs text-slate-500 font-normal">/ one-time</span></div>
-          </div>
-          <a href="https://wa.me/917799423794?text=Hi,%20I%20want%20to%20book%20a%20Google%20Visibility%20Audit" class="w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm text-center block transition-all">Select Plan</a>
-        </div>
-
-        <div class="bg-slate-900 p-6 rounded-2xl border-2 border-blue-500 flex flex-col justify-between relative shadow-xl shadow-blue-950/40">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Most Popular</div>
-          <div>
-            <div class="text-blue-400 text-sm font-semibold mb-2">Implementation</div>
-            <h3 class="text-lg font-bold text-white mb-4">Google Maps Growth System</h3>
-            <p class="text-slate-400 text-xs leading-relaxed mb-6">Full 30-day implementation plan focused on technical listing optimization, category stacking, and geo-relevance setup.</p>
-            <div class="text-2xl font-extrabold text-white mb-6">₹50,000 <span class="text-xs text-slate-500 font-normal">/ 30 days</span></div>
-          </div>
-          <a href="https://wa.me/917799423794?text=Hi,%20I%20want%20to%20enroll%20in%20the%20Google%20Maps%20Growth%20System" class="w-full py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm text-center block transition-all">Get Started</a>
-        </div>
-
-        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
-          <div>
-            <div class="text-emerald-400 text-sm font-semibold mb-2">Retainer</div>
-            <h3 class="text-lg font-bold text-white mb-4">Monthly Maintenance Retainer</h3>
-            <p class="text-slate-400 text-xs leading-relaxed mb-6">Ongoing review moderation, spam edits removal, weekly media uploads, and proactive rank protection.</p>
-            <div class="text-2xl font-extrabold text-white mb-6">₹15,000 <span class="text-xs text-slate-500 font-normal">/ month</span></div>
-          </div>
-          <a href="https://wa.me/917799423794?text=Hi,%20I%20am%20interested%20in%20the%20Monthly%20Maintenance%20Retainer" class="w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm text-center block transition-all">Subscribe</a>
-        </div>
-
-        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
-          <div>
-            <div class="text-blue-400 text-sm font-semibold mb-2">Media</div>
-            <h3 class="text-lg font-bold text-white mb-4">Virtual Tours & Street View</h3>
-            <p class="text-slate-400 text-xs leading-relaxed mb-6">High-definition 360° panos and official Street View publishing to increase engagement and verification trust.</p>
-            <div class="text-2xl font-extrabold text-white mb-6">₹10,000 <span class="text-xs text-slate-500 font-normal">/ tour</span></div>
-          </div>
-          <a href="https://wa.me/917799423794?text=Hi,%20I%20want%20to%20book%20a%20Virtual%20Tour%20%26%20Street%20View%20Integration" class="w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm text-center block transition-all">Book Photography</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-gradient-to-r from-blue-900/40 to-slate-900 border border-slate-800 rounded-3xl p-8 lg:p-12">
-        <div class="grid lg:grid-cols-2 gap-8 items-center">
-          <div>
-            <span class="text-emerald-400 font-semibold text-xs uppercase tracking-widest">24x7 Ticket-Based Escalation</span>
-            <h2 class="text-3xl font-extrabold text-white mt-2 mb-4">Facing Listing Suspensions or Policy Violations?</h2>
-            <p class="text-slate-300 text-sm leading-relaxed mb-6">
-              Get direct resolution support for hard suspensions, soft suspensions, duplicate listings, and review management directly through our prioritized WhatsApp support line.
-            </p>
-            <div class="flex items-center gap-3 text-lg font-semibold text-white">
-              <i class="fa-solid fa-phone text-blue-400"></i>
-              <span>+91 77994 23794</span>
+            <div class="stat-card">
+                <h3>2,000+</h3>
+                <p>Businesses Audited</p>
             </div>
-          </div>
-          <div class="text-center lg:text-right">
-            <a href="https://wa.me/917799423794" target="_blank" class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl text-lg transition-all shadow-xl shadow-emerald-950/50">
-              <i class="fa-brands fa-whatsapp text-2xl"></i>
-              <span>Open Support Ticket</span>
-            </a>
-          </div>
+            <div class="stat-card">
+                <h3>100+</h3>
+                <p>Cities Covered</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="border-t border-slate-800 py-10 bg-slate-950 text-slate-500 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-      <div class="flex items-center space-x-3">
-        <div class="w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center font-bold text-xs text-white">SP</div>
-        <span class="text-slate-300 font-semibold text-sm">SP Digital Journey</span>
-      </div>
-      <p>© 2026 SPDigitalJourney. All rights reserved. Registered MSME Udyam Sole Proprietorship based in Achitnagar, Bengaluru, Karnataka.</p>
-      <div class="text-slate-400 text-xs font-medium">
-        Made by <a href="https://spdigitaljourney.github.io/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">SPDIGITALJOURNEY</a>
-      </div>
-    </div>
-  </footer>
+    <!-- Interactive AI & Ask Maps Business Audit Widget -->
+    <section id="audit-tool" class="interactive-tool">
+        <h2><i class="fa-solid fa-robot" style="color: var(--primary-blue);"></i> Instant Google Maps Visibility Score</h2>
+        <p style="font-size:0.88rem; color:var(--text-muted);">Simulate how Google Search & Maps AI views your business listing.</p>
+        
+        <div class="tool-input-group">
+            <input type="text" id="bizName" placeholder="Enter Business Name (e.g., Royal Designer Studio)">
+            <input type="text" id="bizCity" placeholder="City (e.g., Mysuru, Bengaluru, Hyderabad)">
+            <select id="bizCategory">
+                <option value="">Select Primary Category</option>
+                <option value="retail">Retail / Showroom / Store</option>
+                <option value="restaurant">Restaurant / Cafe / Dining</option>
+                <option value="education">School / College / Academy</option>
+                <option value="services">Salon / Clinic / Professional Services</option>
+            </select>
+            <button class="tool-btn" onclick="runVisibilityAudit()">Run AI Map Scan</button>
+        </div>
 
+        <div id="auditResult" class="tool-result">
+            <h4 id="resultTitle" style="color:var(--dark-navy);"></h4>
+            <p id="resultText" style="font-size:0.9rem; margin-top:5px;"></p>
+            <button onclick="scrollToContact()" style="margin-top:10px; background:var(--primary-blue); color:white; border:none; padding:8px 14px; border-radius:6px; cursor:pointer;">Fix This On WhatsApp</button>
+        </div>
+    </section>
+
+    <!-- Execution & Services Section -->
+    <h2 class="section-title">Google Ecosystem Solutions</h2>
+    <section class="services-grid">
+        <div class="service-card">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h3>Google Business Profile Optimisation</h3>
+            <p>Accurate categorisation, name/address consistency, product catalog creation, and local search ranking setup.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-camera-retro"></i>
+            <h3>360° Street View & Walkthroughs</h3>
+            <p>High-definition interior & exterior 360° virtual tour shooting, stitching, editing, and official Google publishing.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-magnifying-glass-location"></i>
+            <h3>Local SEO & Visibility Strategy</h3>
+            <p>Action plans designed to make your business easy to find, easy to explore, and easy to trust on Google Search & Maps.</p>
+        </div>
+    </section>
+
+    <!-- WhatsApp Lead Capture Funnel -->
+    <section id="contact" class="contact-section">
+        <h2 style="text-align: center; font-size: 1.5rem; margin-bottom: 0.5rem;">Connect With Sanjay Paul</h2>
+        <p style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Fill in your details below to send an automated inquiry directly via WhatsApp.</p>
+
+        <form id="leadForm" onsubmit="sendToWhatsApp(event)">
+            <div class="form-group">
+                <label for="clientName">Your Name / Business Owner</label>
+                <input type="text" id="clientName" placeholder="e.g. Rahul Sharma" required>
+            </div>
+            <div class="form-group">
+                <label for="clientBiz">Business Name & Location</label>
+                <input type="text" id="clientBiz" placeholder="e.g. Bombay Dine, Bengaluru" required>
+            </div>
+            <div class="form-group">
+                <label for="serviceNeeded">Primary Requirement</label>
+                <select id="serviceNeeded" required>
+                    <option value="Google Business Profile Setup & Optimisation">Google Business Profile Optimisation</option>
+                    <option value="360 Visuals / Street View Photography Shoot">360° Visuals & Virtual Tour Shoot</option>
+                    <option value="Complete Local SEO & Maps Audit">Complete Local SEO Strategy</option>
+                    <option value="1-on-1 Business Advisory Session">1-on-1 Advisory Session</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="additionalNotes">Additional Notes (Optional)</label>
+                <textarea id="additionalNotes" rows="3" placeholder="Tell us about your project goals or timing..."></textarea>
+            </div>
+            <button type="submit" class="whatsapp-submit">
+                <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i> Request Consultation on WhatsApp
+            </button>
+        </form>
+
+        <!-- Social Proof & Verification Links -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/sanjaypaul7024" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/SanjayPaul_7024" target="_blank" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://g.page/r/CdRrLmhaPARzEBM/review" target="_blank" title="Google Reviews"><i class="fa-solid fa-star"></i></a>
+            <a href="mailto:rpsanjaypaul@gmail.com" title="Email Us"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© SPDigitalJourney • MSME Udyam Registered Sole Proprietorship</p>
+        <p style="margin-top: 5px;">Made by <a href="https://spdigitaljourney.github.io/" target="_blank">SPDigitalJourney https://spdigitaljourney.github.io/</a></p>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // AI & Ask Maps Visibility Score Simulator
+        function runVisibilityAudit() {
+            const name = document.getElementById('bizName').value;
+            const city = document.getElementById('bizCity').value;
+            const category = document.getElementById('bizCategory').value;
+            const resultBox = document.getElementById('auditResult');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultText = document.getElementById('resultText');
+
+            if (!name || !city) {
+                alert('Please provide both business name and city to run the scan.');
+                return;
+            }
+
+            resultBox.style.display = 'block';
+            resultTitle.innerText = `Audit Report: ${name} (${city})`;
+            
+            // Educational diagnostic response based on standard profile gaps
+            resultText.innerHTML = `<strong>Visibility Status:</strong> Business identified in <em>${city}</em>.<br>` +
+                `• <strong>360° Virtual Tour:</strong> Recommended to increase trust & map engagement.<br>` +
+                `• <strong>Google AI / Ask Maps Optimisation:</strong> Enhanced category tags & product catalog needed for full local search indexability.`;
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // WhatsApp Lead Funnel Script
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('clientName').value;
+            const biz = document.getElementById('clientBiz').value;
+            const service = document.getElementById('serviceNeeded').value;
+            const notes = document.getElementById('additionalNotes').value;
+
+            const phone = "917799345794"; // WhatsApp contact number
+
+            let message = `Hello Sanjay Paul,%0A%0AI would like to inquire about digital visibility services for my business.%0A%0A` +
+                          `*Name:* ${encodeURIComponent(name)}%0A` +
+                          `*Business & City:* ${encodeURIComponent(biz)}%0A` +
+                          `*Requirement:* ${encodeURIComponent(service)}`;
+
+            if (notes.trim() !== "") {
+                message += `%0A*Notes:* ${encodeURIComponent(notes)}`;
+            }
+
+            const whatsappUrl = `https://wa.me/${phone}?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
 </body>
 </html>
